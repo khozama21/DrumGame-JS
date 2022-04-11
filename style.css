@@ -1,0 +1,74 @@
+html {
+    font-size: 10px;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+
+
+.keys{
+    background:url("wp2860042-wallpaper-drum-hd.jpg") no-repeat ;
+    background-size: cover;
+    /* width: 100%; */
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.key{
+    border: 1px solid black;
+    border-radius: .5em;
+    margin: 1em;
+    font-size: 1.5em;
+    padding: 1em .5em;
+    transition:all .07s ease;
+    width: 10em;
+    text-align: center;
+    color: white;
+    background-color: rgba(65, 63, 63, 0.521);
+/* display: flex;
+flex-direction: column; */
+
+
+    
+}
+kbd{
+    display:block ;
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+}
+.sound{
+    /* display: block; */
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgb(136, 255, 0);
+
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffffffd7;
+    box-shadow: 0 0 1rem #00ff88;
+  }
+  @media screen and (max-width:426px){
+      .keys{
+          flex-direction: column;
+      }
+  
+      
+  }
+  @media screen and (max-width:768px){
+    .keys{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    
+}
